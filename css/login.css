@@ -1,0 +1,125 @@
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dadada;
+    color: #333;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 400px;
+    width: 100%;
+    border: 2px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+/* Contenedor de los inputs con iconos */
+.input-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Iconos dentro de las cajas de texto */
+.input-container i {
+    position: absolute;
+    left: 15px;
+    top: 45%;
+    transform: translateY(-100%);
+    color: #888; /* Icono en gris */
+    font-size: 14px;
+}
+
+/* Cajas de texto con mismo tamaño que el botón */
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px 40px; /* Ajustamos padding para dejar espacio al icono */
+    margin-bottom: 20px;
+    border: 2px solid #e0dfdf;
+    border-radius: 5px;
+    background-color: #fafafa;
+    color: #333;
+    font-size: 16px;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box; /* Asegúrate de incluir padding y borde en el ancho total */
+}
+
+/* Botón de enviar */
+button {
+    /*background-color: #1e4d77; /*LUNA*/
+    background-color: #01a800; /*OLIVARES*/
+    /*background-color: #f4911e; /*PAKASA*/
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    /*background-color: #bb952f; /*LUNA*/
+    background-color: #444444; /*OLIVARES*/
+    /*background-color: #1e4f78; /*PAKASA*/
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #888; /* Color del placeholder en gris */
+}
+.logo {
+    max-width: 80%;
+    padding: 10px 0px;
+    height: auto; /* Mantiene las proporciones de la imagen */
+    display: inline-block;
+    vertical-align: middle;
+}
+/* Estilo general del modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed; /* Fijado en la pantalla */
+    z-index: 999; /* Asegura que esté encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    text-align: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    input[type="text"], input[type="password"], button {
+        font-size: 14px; /* Reducir el tamaño de fuente */
+    }
+}

@@ -1,0 +1,116 @@
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff; /* Gris oscuro */
+    color: #333;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 3; /* Mantener el header por encima del sidebar */
+}
+
+/* Contenedor para el ícono del menú y el logo */
+.menu-logo {
+    display: flex;
+    align-items: center;
+    gap: 0px; /* Espacio entre el ícono y el logo */
+    padding: 0px 5px;
+}
+/* Estilos del logo */
+
+.logo {
+    width: 225px; /* Reducir el tamaño del logo */
+    height: auto;
+}
+
+.menu-logo2 {
+    display: flex;
+    align-items: center;
+    gap: 0px; /* Espacio entre el ícono y el logo */
+    padding: 0px 5px;
+}
+
+/* Estilos del icono del menú */
+.menu-icon {
+    width: 50px; /* Tamaño del ícono */
+    height: auto;
+    cursor: pointer;
+    margin-right: 10px; /* Espacio entre el ícono y el logo */
+    border: 1px solid #ccc; /* Borde delgado alrededor del ícono */
+    border-radius: 5px; /* Borde ligeramente redondeado */
+    padding: 0px 5px; /* Espacio interno del ícono */
+}
+
+/* Ajustar el espaciado entre 'Hola' y el nombre de usuario */
+#user-info {
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* Asegura que estén alineados verticalmente */
+    gap: 5px; /* Reducir la distancia entre 'Hola' y el nombre de usuario */
+}
+
+/* Estilos del icono del menú de usuario */
+.menu-icon2 {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 0px 5px;
+    transition: transform 0.2s ease; /* Añadir efecto de clic */
+}
+
+.menu-icon2:active {
+    transform: scale(0.95); /* Añadir efecto de pequeño "bajón" al hacer clic */
+}
+
+/* Estilos del menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    right: 0px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    border-radius: 5px;
+    min-width: 200px;
+    text-align: left;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd; /* Efecto hover en las opciones */
+}
+
+.show {
+    display: block; /* Mostrar el menú desplegable */
+}
+.dropdown-icon {
+    width: 25px; /* Tamaño pequeño del ícono */
+    height: auto;
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+    vertical-align: middle; /* Alinear con el texto */
+}
+@media (max-width: 430px) {
+    #user-info {
+        font-size: 10px; /* Ajuste adicional para pantallas pequeñas */
+    }
+}

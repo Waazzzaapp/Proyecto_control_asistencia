@@ -1,0 +1,62 @@
+/* Ajuste del contenedor principal para incluir el sidebar entre el header y el footer */
+/* Sidebar: Asegurarse de que sea un contenedor flex */
+.container-sidebar {
+    position: fixed;
+    top: 60px;
+    bottom: 40px; /* Justo encima del footer */
+    left: 0px;
+    display: flex;
+    width: auto;
+    flex-direction: column; /* Organiza los elementos en columna */
+    justify-content: space-between; /* Distribuye el contenido con espacio entre elementos */
+    height: auto; /* Ocupa toda la altura disponible */
+    background-color: #ffffff;
+    overflow-y: auto; /* Añadir scroll si es necesario */
+    padding-top: 20px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.container-sidebar.hidden {
+    transform: translateX(-100%);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+   
+    text-align: left;
+}
+
+.sidebar ul li a {
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ddd; /* Efecto hover en las opciones del menú */
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* Estilos para los íconos en el sidebar */
+.sidebar-icon {
+    width: 50px; /* Tamaño pequeño del ícono */
+    height: auto;
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+    vertical-align: middle; /* Alinear con el texto */
+}
+
+/* Estilos para la opción de cambiar contraseña en la parte inferior del sidebar */
+.bottom-options {
+    margin-top: auto; /* Empuja la opción al final del sidebar */
+    padding-bottom: 20px; /* Añade un poco de espacio inferior */
+    width: 100%;
+}

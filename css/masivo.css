@@ -1,0 +1,72 @@
+h1 {
+font-size: 21px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 16px;
+    
+}
+table, th, td {
+    border: 1px solid #70707070;
+}
+table tr:hover{
+        /*background-color: #bb952f; /*LUNA*/
+        background-color: #44444417; /*OLIVARES*/
+        /*background-color: #1e4f78; /*PAKASA*/
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;    
+}
+
+th {
+    /*background-color: #bb952f; /*LUNA*/
+    background-color: #44444444; /*OLIVARES*/
+    /*background-color: #1e4f78; /*PAKASA*/
+}
+button {
+    /*background-color: #1e4d77; /*LUNA*/
+    background-color: #01a800; /*OLIVARES*/
+    /*background-color: #f4911e; /*PAKASA*/
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+button:hover {
+        /*background-color: #bb952f; /*LUNA*/
+        background-color: #444444; /*OLIVARES*/
+        /*background-color: #1e4f78; /*PAKASA*/
+}
+.button-column {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 430px) {
+    table, th, td {
+        font-size: 10px;
+    }
+    th, td {
+        padding: 8px;
+    }
+    .button-column {
+        flex-direction: column;
+        gap: 10px;
+    }
+    button {
+        font-size: 10px;
+    }
+}
+

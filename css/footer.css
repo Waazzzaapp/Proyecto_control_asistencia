@@ -1,0 +1,18 @@
+.footer {
+    position: fixed; /* Fijado en la parte inferior de la pantalla */
+    bottom: 0px; /* Alineado al fondo de la página */
+    height: 40px;
+    width: 100%; /* Abarcar todo el ancho de la pantalla */
+    text-align: right; /* Alineación del texto a la derecha */
+    font-size: 14px; /* Tamaño de texto */
+    padding: 0px 10px; /* Un poco de espacio alrededor del texto */
+    background-color: #f1f1f1; /* Color de fondo suave */
+    color: #333; /* Color del texto */
+    box-sizing: border-box; /* Incluir el padding dentro del ancho */
+    z-index: 3;
+}
+@media (max-width: 430px) {
+    .footer {
+        font-size: 10px; /* Ajuste adicional para pantallas pequeñas */
+    }
+}
