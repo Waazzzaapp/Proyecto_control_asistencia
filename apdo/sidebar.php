@@ -14,10 +14,16 @@
             </li>
             <?php if ($rol === 'ADMIN'): ?>
                 <li>
-                    <a href="reportes.php" id="reportes-link">
-                        <img src="images/icono8.png" alt="Icono Despacho" class="sidebar-icon"> Reportes    
-                    </a>
-                </li>     
+                <a href="" id="reportes-toggle">
+                <img src="images/icono8.png" alt="Icono Despacho" class="sidebar-icon">
+                Reportes
+                <img src="images/icono11.png" alt="Icono Despacho" class="sidebar-icon3">
+                </a>
+                <ul id="submenu-reportes" style="display: none;">
+                <li><a href="reportes.php"><img src="images/icono9.png" alt="Icono Despacho" class="sidebar-icon2">Reporte Unificado</a></li>
+                <li><a href="reporte_masivo.php"><img src="images/icono10.png" alt="Icono Despacho" class="sidebar-icon2">Reporte Masivo</a></li>
+            </ul>
+        </li>     
             <?php endif; ?>          
         </ul>
         <!-- Opción de "Cambiar contraseña" al final del sidebar -->

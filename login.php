@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['user_id'] = $row['id_usuario']; // Guardar el ID del usuario en la sesión
             $_SESSION['rol'] = $row['rol']; // Guardar el rol en la sesión
             $_SESSION['employee_id'] = $row['id_empleado']; // Guardar el ID del empleado en la sesión
-            header("Location: index.php"); // Redirigir a la página de asistencia
+            header("Location: index.php"); // Redirigir a la página de asistenci
             exit;
         } else {
             $error = "La contraseña no es correcta.";

@@ -60,3 +60,30 @@
     padding-bottom: 20px; /* Añade un poco de espacio inferior */
     width: 100%;
 }
+
+
+#submenu-reportes li a {
+    
+    font-size: 12px; /* Un tamaño más pequeño para las subopciones */
+}
+
+
+#submenu-reportes {
+    list-style-type: none;
+    padding-left: 20px; /* Añade un poco de indentación */
+}
+
+.sidebar-icon2 {
+    width: 25px; /* Tamaño pequeño del ícono */
+    height: auto;
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+    vertical-align: middle; /* Alinear con el texto */
+}
+
+.sidebar-icon3 {
+    width: 12.5px; /* Tamaño pequeño del ícono */
+    height: auto;
+    margin-left: 25%; /* Espacio entre el ícono y el texto */
+    vertical-align: middle; /* Alinear con el texto */
+}
+

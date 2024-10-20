@@ -25,4 +25,18 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
+    const reportesToggle = document.getElementById('reportes-toggle');
+    const submenuReportes = document.getElementById('submenu-reportes');
+
+    if (reportesToggle && submenuReportes) {
+        reportesToggle.addEventListener('click', function(event) {
+            event.preventDefault();
+            if (submenuReportes.style.display === "none") {
+                submenuReportes.style.display = "block"; // Mostrar submenú
+            } else {
+                submenuReportes.style.display = "none"; // Ocultar submenú
+            }
+        });
+    }
+
 });
